@@ -1,0 +1,88 @@
+/* MAIN HEADER (DARK THEME) */
+*{
+    margin:0;
+    padding:0;
+}
+.header-container {
+  width: 100%;
+  background: #b7c1cb;              /* Dark background */
+  border-bottom: 1px solid #22232a;  /* Subtle border */
+  padding: 18px 30px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+  font-family: "Poppins", sans-serif;
+}
+
+/* LEFT SIDE */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-logo {
+  height: 100%;
+  border-radius: 10px;
+  filter: brightness(0.9);
+}
+
+/* HEADER TITLE */
+.header-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #24243e;       /* Light text */
+  margin: 0;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.header-title:hover {
+  color: #1d1639;      /* Purple glow on hover */
+}
+
+/* SIGN OUT BUTTON */
+.header-signout-btn {
+  background: #24243e;     /* Purple button */
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 9px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(140,112,255,0.35);
+}
+
+.header-signout-btn:hover {
+  background: rgb(87, 8, 8);
+  box-shadow: 0 0 20px rgba(160,136,255,0.6);
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .header-container {
+    padding: 15px 18px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .header-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  .header-signout-btn {
+    width: 100%;
+  }
+}
